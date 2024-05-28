@@ -4,7 +4,7 @@
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "python -m pip install -r requirements.txt && python -m pip install ruff",
+  "updateContentCommand": "pip install -r requirements.txt",
   "postCreateCommand": "python -m ipykernel install --user --name devcontainer-kernel --display-name 'Python (devcontainer)'",
   "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc", //Set Terminal Prompt to $
   "customizations": {
