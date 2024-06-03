@@ -7,3 +7,4 @@ matplotlib
 seaborn
 scikit-learn
 streamlit
+nbformat>=4.2.0
