@@ -6,7 +6,7 @@
   "waitFor": "onCreateCommand",
   "updateContentCommand": "pip install -r requirements.txt",
   "postCreateCommand": "python -m ipykernel install --user --name devcontainer-kernel --display-name 'Python (devcontainer)'",
-  "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc", //Set Terminal Prompt to $
+  "onCreateCommand": "echo 'PS1=\"\\w $ \"' >> ~/.bashrc", // Set Terminal Prompt to show path and $
   "customizations": {
     "codespaces": {
       "openFiles": []
