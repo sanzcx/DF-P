@@ -39,5 +39,6 @@ st.plotly_chart(fig)
 
 
 st.write('## Table')
+
 dfs = df.T.style.background_gradient(axis=1).format(precision=0)
 st.write(dfs)

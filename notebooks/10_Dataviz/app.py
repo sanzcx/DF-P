@@ -1,12 +1,15 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import os
+
+file_directory = os.path.dirname(os.path.abspath(__file__))
+path = os.path.join(file_directory, 'data/gapminder.csv')
+df = pd.read_csv(path)
 
 st.set_page_config(layout='wide')
 
 st.title('Data Application')
-
-df = pd.read_csv('../data/gapminder.csv')
 
 fig = px.scatter(
     data_frame=df, x="gdpPercap", y="lifeExp",

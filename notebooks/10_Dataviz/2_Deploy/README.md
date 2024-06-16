@@ -2,7 +2,7 @@
 
 ## Run app
 
-1. Open the terminal in the root folder
+1. Open the terminal
 2. Run the command:
 
 ```python
